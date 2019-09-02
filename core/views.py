@@ -11,5 +11,7 @@ def registro(request):
 def login(request):
 	return render(request, 'login.html')
 
+def maquiagens(request):
+	return render(request, 'maquiagens.html')
 
 
