@@ -6,7 +6,8 @@
 <h1> Página de Login </h1>
 <form method="post">
 {% csrf_token %}
-{{ form }}
+<p> Usuário:  {{ form.username}}</p>
+<p> Senha:  {{ form.password}}</p>
 <button type="submit"> Login </button>
 </form>
 </body>
