@@ -5,11 +5,9 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path
 
-<<<<<<< HEAD
+
 from core.views import index, registro, galeria, login, maquiagens, perfumes
 
-=======
->>>>>>> 1073f3cacbd1b15c2b68d9c335b9f19a283e4a7a
 from core.views import index, registro, galeria, login, maquiagens,perfil
 
 from core.views import index, registro, galeria, maquiagens
@@ -21,13 +19,12 @@ urlpatterns = [
    	path('galeria/',galeria, name="galeria"),
     path('maquiagens/',maquiagens, name="maquiagens"),
 
-<<<<<<< HEAD
+
     path('perfumes/',perfumes, name="perfumes"),
 
    	
 
-=======
->>>>>>> 1073f3cacbd1b15c2b68d9c335b9f19a283e4a7a
+
    	path('perfil/', perfil, name='perfil'),
 
 
