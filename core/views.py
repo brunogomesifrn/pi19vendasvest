@@ -22,5 +22,11 @@ def login(request):
 def maquiagens(request):
 	return render(request, 'maquiagens.html')
 
+
+def perfumes(request):
+	return render(request, 'perfumes.html')
+
+
 def perfil(request):
 	return render(request, 'perfil.html')
+
