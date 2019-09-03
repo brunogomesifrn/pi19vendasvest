@@ -4,12 +4,14 @@ from django.conf.urls.static import static
 
 from django.contrib import admin
 from django.urls import path
-from core.views import index, registro, galeria, login, maquiagens
+from core.views import index, registro, galeria, login, maquiagens, perfumes
 urlpatterns = [
    	path('', index, name='index'),
    	path('galeria/',galeria, name="galeria"),
    	path('login/',login, name="login"),
     path('maquiagens/',maquiagens, name="maquiagens"),
+    path('perfumes/',perfumes, name="perfumes"),
+
    	
    	#registro de usuário
    	path('registro/', registro, name='registro')
