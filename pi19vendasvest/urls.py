@@ -1,20 +1,10 @@
 
 from django.conf import settings
 from django.conf.urls.static import static
-
 from django.contrib import admin
 from django.urls import path
+from core.views import index, registro, galeria, login, maquiagens, perfumes, vestuarios, perfil
 
-
-from core.views import index, registro, galeria, login, maquiagens, perfumes
-
-<<<<<<< HEAD
-
-=======
->>>>>>> fcc8999848208962d866b3733662db28065481ab
-from core.views import index, registro, galeria, login, maquiagens,perfil
-
-from core.views import index, registro, galeria, maquiagens
 from django.contrib.auth import views as auth_views
 
 
@@ -22,14 +12,9 @@ urlpatterns = [
    	path('', index, name='index'),
    	path('galeria/',galeria, name="galeria"),
     path('maquiagens/',maquiagens, name="maquiagens"),
-
-
     path('perfumes/',perfumes, name="perfumes"),
-
-   	
-
-
    	path('perfil/', perfil, name='perfil'),
+    path('vestuarios/', vestuarios, name='vestuarios'),
 
 
    	#registro de usuário

@@ -1,24 +1,20 @@
-<!DOCTYPE html>
+{% extends "base2.html" %}
 {% load static %}
-<html>
-<head>
-	<title></title>
-</head>
-	<meta charset="utf-8">
-<body>
+
+
+{% block conteudo %}
 
 	<div style="text-align:center">
 	<b><h1>Sessão de Maquiagens</h1> 
 	</div>
 
-	<table cellspacing="5" cellpadding="10">
+	<table cellspacing="2" cellpadding="10">
  	<tr> 
 	<td><img class="mx-auto rounded-circle" src= "{% static 'img/3.jpg' %}"  width="250px" height="250px" > <p> Pó de banana. R$:15,00 </P></td> 
 	<td><img class="mx-auto rounded-circle" src= "{% static 'img/4.jpg' %}"  width="250px" height="250px" > <p> Sombras duo. R$:10,00 </P></td> 
-	<td><img class="mx-auto rounded-circle" src= "{% static 'img/1.jpg' %}"  width="250px" height="250px" > <p> Paleta de sombras. R$:35,00 </P></td>
-	<td><img class="mx-auto rounded-circle" src= "{% static 'img/2.jpg' %}"  width="250px" height="250px" > <p> Diluidor de maquiagens. R$:10,00 </P></td> 
-	<td><img class="mx-auto rounded-circle" src= "{% static 'img/5.jpg' %}"  width="250px" height="250px" > <p> Lip tint. R$:22,00 </P></td> <br><br>
-
+	<td><img class="mx-auto rounded-circle" src= "{% static 'img/1.jpg' %}"  width="250px" height="250px" > <p> Paleta de sombras. R$:35,00 </p></td>
+	<td><img class="mx-auto rounded-circle" src= "{% static 'img/2.jpg' %}"  width="250px" height="250px" > <p> Diluidor de maquiagens. R$:10,00 </p></td> 
+	<td><img class="mx-auto rounded-circle" src= "{% static 'img/5.jpg' %}"  width="250px" height="250px" > <p> Lip tint. R$:22,00 </P></td> 
 
 
  	</tr>
@@ -30,3 +26,4 @@
 </body>
 </html>
 
+{% endblock %}

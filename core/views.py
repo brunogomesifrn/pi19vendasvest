@@ -30,3 +30,8 @@ def perfumes(request):
 def perfil(request):
 	return render(request, 'perfil.html')
 
+
+def vestuarios(request):
+	return render(request, 'vestuarios.html')
+
+
