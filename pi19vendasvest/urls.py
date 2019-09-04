@@ -8,10 +8,6 @@ from django.urls import path
 
 from core.views import index, registro, galeria, login, maquiagens, perfumes
 
-<<<<<<< HEAD
-
-=======
->>>>>>> fcc8999848208962d866b3733662db28065481ab
 from core.views import index, registro, galeria, login, maquiagens,perfil
 
 from core.views import index, registro, galeria, maquiagens
