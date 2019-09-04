@@ -8,10 +8,6 @@ from django.urls import path
 
 from core.views import index, registro, galeria, login, maquiagens, perfumes
 
-<<<<<<< HEAD
-
-=======
->>>>>>> e7aa379a45686efa24244361bc3c099220130318
 from core.views import index, registro, galeria, login, maquiagens,perfil
 
 from core.views import index, registro, galeria, maquiagens
@@ -22,22 +18,12 @@ urlpatterns = [
    	path('', index, name='index'),
    	path('galeria/',galeria, name="galeria"),
     path('maquiagens/',maquiagens, name="maquiagens"),
-
-
     path('perfumes/',perfumes, name="perfumes"),
-
-   	
-
-
-   	path('perfil/', perfil, name='perfil'),
-
-
-   	#registro de usuário
-
+    path('perfil/', perfil, name='perfil'),
+    #registro de usuário
     path('login/', auth_views.LoginView.as_view(), name='login'),
-	#registro de usuário
-
-   	path('registro/', registro, name='registro')
+	  #registro de usuário
+    path('registro/', registro, name='registro')
 
    	
 
