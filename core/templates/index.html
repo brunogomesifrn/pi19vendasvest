@@ -1,7 +1,79 @@
 {% extends "base.html" %}
 {% load static %}
 
+<<<<<<< HEAD
 {% block conteudo %}
+=======
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Nova Modas e Presentes</title
+
+  <!-- Bootstrap core CSS -->
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="{% static 'vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="{% static 'css/agency.min.css' %}" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Nova Modas e Presentes</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav text-uppercase ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="{% url 'login' %}">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="{% url 'registro' %}">Cadastro</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="{% url 'galeria' %}">Lista de produtos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#portfolio">Marcas</a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#team">Desenvolvedores</a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Sobre a loja</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="masthead">
+    <div class="container">
+      <div class="intro-text">
+        <div class="intro-lead-in">"Buscamos pela excelência, não pela perfeição." </div>
+        <div class="intro-heading text-uppercase">Boas compras!</div>
+        <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Categorias</a>
+      </div>
+    </div>
+  </header>
+>>>>>>> 7c986fb6a5e150e6ffd7575956757ff00eab2b72
 
   <!-- Services -->
   <section class="page-section" id="services">
@@ -74,8 +146,7 @@
             <img class="img-fluid" src="img/portfolio/03-thumbnail.jpg" alt="">
           </a>
           <div class="portfolio-caption">
-            <h4>Finish</h4>
-            <p class="text-muted">Identity</p>
+            <h4>Boticário</h4>
           </div>
         </div>
         <div class="col-md-4 col-sm-6 portfolio-item">
@@ -88,8 +159,7 @@
             <img class="img-fluid" src="img/portfolio/04-thumbnail.jpg" alt="">
           </a>
           <div class="portfolio-caption">
-            <h4>Lines</h4>
-            <p class="text-muted">Branding</p>
+            <h4>Luisance</h4>
           </div>
         </div>
         <div class="col-md-4 col-sm-6 portfolio-item">
@@ -102,7 +172,7 @@
             <img class="img-fluid" src="img/portfolio/05-thumbnail.jpg" alt="">
           </a>
           <div class="portfolio-caption">
-            <h4>Southwest</h4>
+            <h4>RubyRose</h4>
             <p class="text-muted">Website Design</p>
           </div>
         </div>
@@ -116,90 +186,9 @@
             <img class="img-fluid" src="img/portfolio/06-thumbnail.jpg" alt="">
           </a>
           <div class="portfolio-caption">
-            <h4>Window</h4>
+            <h4>Avon</h4>
             <p class="text-muted">Photography</p>
           </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- About -->
-  <section class="page-section" id="about">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">About</h2>
-          <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-12">
-          <ul class="timeline">
-            <li>
-              <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="img/about/1.jpg" alt="">
-              </div>
-              <div class="timeline-panel">
-                <div class="timeline-heading">
-                  <h4>2009-2011</h4>
-                  <h4 class="subheading">Our Humble Beginnings</h4>
-                </div>
-                <div class="timeline-body">
-                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                </div>
-              </div>
-            </li>
-            <li class="timeline-inverted">
-              <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="img/about/2.jpg" alt="">
-              </div>
-              <div class="timeline-panel">
-                <div class="timeline-heading">
-                  <h4>March 2011</h4>
-                  <h4 class="subheading">An Agency is Born</h4>
-                </div>
-                <div class="timeline-body">
-                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="img/about/3.jpg" alt="">
-              </div>
-              <div class="timeline-panel">
-                <div class="timeline-heading">
-                  <h4>December 2012</h4>
-                  <h4 class="subheading">Transition to Full Service</h4>
-                </div>
-                <div class="timeline-body">
-                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                </div>
-              </div>
-            </li>
-            <li class="timeline-inverted">
-              <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="img/about/4.jpg" alt="">
-              </div>
-              <div class="timeline-panel">
-                <div class="timeline-heading">
-                  <h4>July 2014</h4>
-                  <h4 class="subheading">Phase Two Expansion</h4>
-                </div>
-                <div class="timeline-body">
-                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                </div>
-              </div>
-            </li>
-            <li class="timeline-inverted">
-              <div class="timeline-image">
-                <h4>Be Part
-                  <br>Of Our
-                  <br>Story!</h4>
-              </div>
-            </li>
-          </ul>
         </div>
       </div>
     </div>
@@ -330,42 +319,15 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Contact Us</h2>
-          <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+          <h2 class="section-heading text-uppercase">Sobre a loja</h2>
+          <h3 class="section-subheading text-muted">Escrever um texto falando sobre a loja</h3>
         </div>
       </div>
       <div class="row">
         <div class="col-lg-12">
-          <form id="contactForm" name="sentMessage" novalidate="novalidate">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="form-group">
-                  <input class="form-control" id="name" type="text" placeholder="Your Name *" required="required" data-validation-required-message="Please enter your name.">
-                  <p class="help-block text-danger"></p>
-                </div>
-                <div class="form-group">
-                  <input class="form-control" id="email" type="email" placeholder="Your Email *" required="required" data-validation-required-message="Please enter your email address.">
-                  <p class="help-block text-danger"></p>
-                </div>
-                <div class="form-group">
-                  <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" required="required" data-validation-required-message="Please enter your phone number.">
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="form-group">
-                  <textarea class="form-control" id="message" placeholder="Your Message *" required="required" data-validation-required-message="Please enter a message."></textarea>
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>
-              <div class="clearfix"></div>
-              <div class="col-lg-12 text-center">
-                <div id="success"></div>
-                <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase" type="submit">Send Message</button>
-              </div>
-            </div>
-          </form>
+          <img class="mx-auto rounded" src= "{% static 'img/nova.jpg' %}" alt="" width="250" height="260" >
         </div>
+
       </div>
     </div>
   </section>
@@ -403,7 +365,7 @@
                 <h2 class="text-uppercase">Natura</h2>
                 <p class="item-intro text-muted">Nossa História</p>
                 <img class="img-fluid d-block mx-auto" src="img/portfolio/01-full.jpg" alt="">
-                <p>" A trajetória que nos fez a maior multinacional brasileira de cosméticos começou em 1969, quando Luiz Seabra inaugurou uma pequena loja na rua Oscar Freire, em São Paulo. Desde o primeiro dia, construímos um negócio com a missão de proporcionar o bem-estar-bem, relações harmoniosas do indivíduo consigo mesmo, com os outros e com a natureza. "</p>
+                <p align="justify"> A trajetória que nos fez a maior multinacional brasileira de cosméticos começou em 1969, quando Luiz Seabra inaugurou uma pequena loja na rua Oscar Freire, em São Paulo. Desde o primeiro dia, construímos um negócio com a missão de proporcionar o bem-estar-bem, relações harmoniosas do indivíduo consigo mesmo, com os outros e com a natureza. </p>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fas fa-times"></i>
                   Fechar</button>
@@ -432,8 +394,8 @@
                 <h2 class="text-uppercase">Eudora</h2>
                 <p class="item-intro text-muted">Sobre Eudora</p>
                 <img class="img-fluid d-block mx-auto" src="img/portfolio/02-full.jpg" alt="">
-                <p>" Lançada em fevereiro de 2011, Eudora é uma das unidades de negócio do Grupo Boticário. Eudora acredita que só está vivo quem está fazendo, quem está assumindo o lugar de protagonista a que cada mulher tem direito.
-                Eudora quer ajudar as mulheres a fazerem a sua vida acontecer. Por isso, oferece um amplo portfólio de produtos. Com mais de 600 itens e atendendo as mais variadas categorias de beleza como perfumaria, maquiagem, esmaltes, cabelos, corpo, banho e acessórios. "</p>
+                <p align="justify"> Lançada em fevereiro de 2011, Eudora é uma das unidades de negócio do Grupo Boticário. Eudora acredita que só está vivo quem está fazendo, quem está assumindo o lugar de protagonista a que cada mulher tem direito.
+                Eudora quer ajudar as mulheres a fazerem a sua vida acontecer. Por isso, oferece um amplo portfólio de produtos. Com mais de 600 itens e atendendo as mais variadas categorias de beleza como perfumaria, maquiagem, esmaltes, cabelos, corpo, banho e acessórios. </p>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fas fa-times"></i>
                   Fechar</button>
@@ -459,18 +421,13 @@
             <div class="col-lg-8 mx-auto">
               <div class="modal-body">
                 <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                <h2 class="text-uppercase">Boticário</h2>
+                <p class="item-intro text-muted">Sobre Boticário</p>
                 <img class="img-fluid d-block mx-auto" src="img/portfolio/03-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Finish</li>
-                  <li>Category: Identity</li>
-                </ul>
+                <p align="justify"> O Boticário é uma rede de franquias de cosméticos e perfumes brasileira, com sede no Paraná. Seus principais produtos são fragrâncias, cremes e produtos para maquiagem. É a oitava maior empresa varejista do país, segundo classificação do Ibevar em 2012. Foi fundada em 1977 por Miguel Krigsner como uma farmácia de manipulação no centro de Curitiba</p>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fas fa-times"></i>
-                  Close Project</button>
+                  Fechar</button>
               </div>
             </div>
           </div>
@@ -493,18 +450,13 @@
             <div class="col-lg-8 mx-auto">
               <div class="modal-body">
                 <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                <h2 class="text-uppercase">Luisance</h2>
+                <p class="item-intro text-muted">Sobre Luisance</p>
                 <img class="img-fluid d-block mx-auto" src="img/portfolio/04-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Lines</li>
-                  <li>Category: Branding</li>
-                </ul>
+                <p align="justify">Desde 1998, a Luisance desenvolve e comercializa produtos de maquiagem ideais para a mulher moderna e dinâmica, seguindo as mais atuais tendências do mundo da beleza, e cumprindo todas as exigências do mercado e de nossos consumidores. São mais de 160 produtos para olhos, face, lábios e kits de maquiagem que realçam o que existe de melhor nas mulheres: personalidade, confiança e a beleza única! Tudo com a mais alta qualidade a preços acessíveis. Luisance traz até você maquiagens para todos os momentos, sempre inspirada no poder feminino e na verdadeira beleza da mulher!</p>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fas fa-times"></i>
-                  Close Project</button>
+                  Fechar</button>
               </div>
             </div>
           </div>
@@ -527,7 +479,7 @@
             <div class="col-lg-8 mx-auto">
               <div class="modal-body">
                 <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Project Name</h2>
+                <h2 class="text-uppercase">RubyRose</h2>
                 <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                 <img class="img-fluid d-block mx-auto" src="img/portfolio/05-full.jpg" alt="">
                 <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
@@ -561,7 +513,7 @@
             <div class="col-lg-8 mx-auto">
               <div class="modal-body">
                 <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Project Name</h2>
+                <h2 class="text-uppercase">Avon</h2>
                 <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                 <img class="img-fluid d-block mx-auto" src="img/portfolio/06-full.jpg" alt="">
                 <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
