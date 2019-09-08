@@ -20,10 +20,6 @@ def registro(request):
 	}
 	return render(request, 'registro.html', contexto)
 
-@login_required	
-def login(request):
-	return render(request, 'login.html')
-
 def maquiagens(request):
 	return render(request, 'maquiagens.html')
 
@@ -31,7 +27,7 @@ def maquiagens(request):
 def perfumes(request):
 	return render(request, 'perfumes.html')
 
-
+@login_required
 def perfil(request):
 	return render(request, 'perfil.html')
 

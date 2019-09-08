@@ -4,13 +4,14 @@
 
 
   <h1 class="text-uppercase text-white font-weight-bold">Perfil de usuário</h1>
-  <h2> Olá, {{ user.username }}</h2>
+
+  <h2 class="text-uppercase text-white font-weight-bold"><center>Olá {{ user.username }}</center></h2>
   <form method="post">
   {% csrf_token %}
-  <p><a href="{% url 'dados' user.id %}"> Meus dados </a></p>
-  <p> Meus pedidos </p>
+  <center><a class="btn btn-primary btn-xl js-scroll-trigger" href="{%url 'dados' user.id %}"> Meus dados </a></center><b></br>
+  <center><a class="btn btn-primary btn-xl js-scroll-trigger"> Meus Pedidos </a></center><b></br>
+  <center><a class="btn btn-primary btn-xl js-scroll-trigger" href="{% url 'logout' %}"> Logout </a></center><br></br>
 
-  
    <br><br> <br><br>
  
       </div>
@@ -19,3 +20,4 @@
 
 
 {% endblock %}
+

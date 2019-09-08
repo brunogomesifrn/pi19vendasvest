@@ -6,11 +6,12 @@
   <h1 class="text-uppercase text-white font-weight-bold">Página de Login</h1>
   <form method="post">
   {% csrf_token %}
-<p> Usuário:  {{ form.username}}</p>
-<p> Senha:  {{ form.password}}</p>
-
-  <button  class="btn btn-primary btn-xl js-scroll-trigger"  type="submit">Salvar</button>
-   
+<form method="post">
+{% csrf_token %}
+<p  class="text-uppercase text-white font-weight-bold">Usuário: {{ form.username }}</p>
+<p class="text-uppercase text-white font-weight-bold">Senha: {{ form.password }}</p>
+<button class="btn btn-primary btn-xl js-scroll-trigger"  type="submit">Login</button>
+</form>
    <br><br> <br><br>
  
       </div>

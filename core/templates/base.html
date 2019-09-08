@@ -38,14 +38,26 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav text-uppercase ml-auto">
-          {% if not user.is_autheticated %}
-          <li class="nav-item">
+          
+           <li class="nav-item">
+            {% if not user.is_autheticated %}
             <a class="nav-link js-scroll-trigger" href="{% url 'login' %}">Login</a>
+            {% endif %} 
           </li>
+            
           <li class="nav-item">
+            {% if not user.is_autheticated %}
             <a class="nav-link js-scroll-trigger" href="{% url 'registro' %}">Cadastro</a>
+            {% endif %} 
           </li>
-          {% endif %}
+         
+           
+           <li class="nav-item">
+          
+            <a class="nav-link js-scroll-trigger" href="{% url 'perfil' %}">Perfil</a>
+            
+          </li>
+          
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="{% url 'galeria' %}">Lista de produtos</a>
           </li>
