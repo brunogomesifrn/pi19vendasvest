@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 {% load static %}
+{% block conteudo %}
 <html lang="en">
 
 <head>
@@ -52,12 +53,13 @@
       <div class="intro-text">
        <h1 class="text-uppercase text-white font-weight-bold">Cadastro de Usuário</h1>
   <form method="post">
-  {% csrf_token %}
-  <p class="text-uppercase text-white font-weight-bold">Usuário: {{ form.username }}</p>
-  <p class="text-uppercase text-white font-weight-bold">Senha: {{ form.password1 }}</p>
-  <p class="text-uppercase text-white font-weight-bold">Repetir a senha: {{ form.password2 }}</p>
+    {% csrf_token %}
+ 
+      <p class="text-uppercase text-white font-weight-bold">Usuário: {{ form.username }}</p>
+      <p class="text-uppercase text-white font-weight-bold">Senha: {{ form.password1 }}</p>
+      <p class="text-uppercase text-white font-weight-bold">Repetir a senha: {{ form.password2 }}</p>
 
-  <button  class="btn btn-primary btn-xl js-scroll-trigger"  type="submit">Salvar</button>
+      <button  class="btn btn-primary btn-xl js-scroll-trigger"  type="submit">Salvar</button>
    
       </div>
     </div>
@@ -81,3 +83,5 @@
 </body>
 
 </html>
+
+{% endblock %}

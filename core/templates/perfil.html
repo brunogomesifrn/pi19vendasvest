@@ -1,0 +1,21 @@
+{% extends "base2.html" %}
+{% load static %}
+{% block conteudo %}
+
+
+  <h1 class="text-uppercase text-white font-weight-bold">Perfil de usuário</h1>
+  <h2> Olá, {{ user.username }}</h2>
+  <form method="post">
+  {% csrf_token %}
+  <p><a href="{% url 'dados' user.id %}"> Meus dados </a></p>
+  <p> Meus pedidos </p>
+
+  
+   <br><br> <br><br>
+ 
+      </div>
+    </div>
+  </header>
+
+
+{% endblock %}
